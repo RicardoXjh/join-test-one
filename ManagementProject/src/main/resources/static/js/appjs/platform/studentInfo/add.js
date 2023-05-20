@@ -59,7 +59,7 @@ layui.config({
 					data : $('#signupForm').serialize(),// 你的formid
 					async : false,
 					error : function(request) {
-						parent.layer.alert("Connection error");
+						parent.layer.alert("Connection");
 					},
 					success : function(data) {
 						if (data.code == 0) {

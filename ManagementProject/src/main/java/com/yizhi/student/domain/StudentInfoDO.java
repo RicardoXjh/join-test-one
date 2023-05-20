@@ -72,6 +72,15 @@ public class StudentInfoDO implements Serializable {
 	//修改人
 	private Integer editUserid;
 
+	private String className;
+
+	private String collegeName;
+
+	private String majorName;
+
+	public StudentInfoDO() {
+	}
+
 	/**
 	 * 设置：主键
 	 */
@@ -383,6 +392,30 @@ public class StudentInfoDO implements Serializable {
 	 */
 	public Integer getEditUserid() {
 		return editUserid;
+	}
+
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+	public String getCollegeName() {
+		return collegeName;
+	}
+
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+
+	public String getMajorName() {
+		return majorName;
+	}
+
+	public void setMajorName(String majorName) {
+		this.majorName = majorName;
 	}
 
 	@Override
